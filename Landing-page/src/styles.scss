@@ -1,0 +1,198 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+@import './assets/fonts/stylesheet';
+
+
+$font-stack:  Source Sans Pro, roboto;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  margin: 0;
+}
+.main_container{
+  background-color: #ffffff;
+  display: grid; 
+  grid-template-columns: [inicio] 1fr [fila1] 1fr [fila2] 1fr [final];
+  grid-auto-rows: auto;
+  grid-column-gap: 20px;
+  align-content: center;
+  padding: 0 9.3%;
+  max-width: 1920px;
+}
+.Header__container{
+  grid-column: inicio/final;
+}
+.Header__1{
+  font-weight: 300;
+  font-size: 80px;
+  inline-size: 20px;
+  font-style:normal;
+}
+.Hero__container{
+  grid-column: inicio/final;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 800px;
+  padding-right: 20px;
+  max-width: 1900px;
+}
+.content__1{
+  line-height: 32px;
+  font-size: 20px;
+  max-width: 500px;
+}
+.imagen_hero{
+  float: right;
+  position:absolute;
+  right: 0;
+  height: 70%;
+}
+.Hero{
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+}
+.logo_img{
+  height: 90px;
+  width: 180;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+header {
+  width: 91%;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+}
+
+nav {
+  float: right; /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: right;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #3ead47;
+}
+.Services_container{
+  grid-column: inicio/final;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Services__description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Services__services{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10%;
+}
+.Services__Help{
+  text-align: center;
+}
+.Services__tittle{
+  font-weight: 300;
+}
+.img_service{
+  -moz-transform: scaleX(-1); /* Firefox */
+-o-transform: scaleX(-1); /* Opera */
+-webkit-transform: scaleX(-1); /* Chrome y Safari */
+transform: scaleX(-1); /* w3org */
+filter: FlipH; /* Internet Explorer */
+}
+.Services__rows{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.Page_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: inicio/final;
+  padding: 0 20%;
+  text-align: center;
+}
+.get_button{
+  background-color: rgb(223, 243, 255);
+  border: 0;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(73, 101, 163);
+
+}
+.help_button{
+  background-color: rgb(173, 219, 206);
+  color: green;
+  border-radius: 25px;
+  padding: 5px 20px;
+  border: 0;
+}
+.plan__box{
+  background-color: #ffffff;
+  width: 300px;
+  -webkit-box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.43); 
+box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.43);
+}
+.plan__box_box{
+  background-color: #377DFF;
+  color: white;
+}
+.box{
+  padding: 30px;
+}
+.curve{
+  bottom: 1px;
+  margin:-5px 0px;
+}
+.h3_box{
+  margin: 0;
+  font-size: 20px;
+}
+.h1_box{
+  font-size: 70px;
+  margin: 10px 0px;
+}
+.box_container{
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+}
+.Price_container{
+  grid-column: inicio/final;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.extra_content{
+  max-width: 500px;
+}
